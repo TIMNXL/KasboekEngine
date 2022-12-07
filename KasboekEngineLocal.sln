@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KasboekEngineBackend", "KasboekEngineLocal\KasboekEngineBackend.csproj", "{F250FD5F-1798-4DBE-9E3E-42C4740FAA31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KasboekEnginebackend.UnitTests", "KasboekEngineLocal.UnitTests\KasboekEnginebackend.UnitTests.csproj", "{99896F29-D671-4888-9400-F967E7D34002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{87C28FD6-78F9-4300-B1AD-CCED869573FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F250FD5F-1798-4DBE-9E3E-42C4740FAA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F250FD5F-1798-4DBE-9E3E-42C4740FAA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F250FD5F-1798-4DBE-9E3E-42C4740FAA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F250FD5F-1798-4DBE-9E3E-42C4740FAA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99896F29-D671-4888-9400-F967E7D34002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99896F29-D671-4888-9400-F967E7D34002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99896F29-D671-4888-9400-F967E7D34002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99896F29-D671-4888-9400-F967E7D34002}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99896F29-D671-4888-9400-F967E7D34002} = {87C28FD6-78F9-4300-B1AD-CCED869573FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A246433-DC0A-4A20-91C4-858A3553F4BA}
+	EndGlobalSection
+EndGlobal
