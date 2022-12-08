@@ -1,6 +1,6 @@
 # KasboekEngine
 
-[![SonarCloud](https://github.com/TIMNXL/KasboekEngine/actions/workflows/build.yml/badge.svg)](https://github.com/TIMNXL/KasboekEngine/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TIMNXL_Kasboek&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=TIMNXL_Kasboek)
 
 This is a personal project that I am working on. I want to create a financial overview for you personal finances. As an MVP it should have the following functions:
 - Show an overview of all the transactions
