@@ -1,5 +1,7 @@
 # KasboekEngine
 
+[![SonarCloud](https://github.com/TIMNXL/KasboekEngine/actions/workflows/build.yml/badge.svg)](https://github.com/TIMNXL/KasboekEngine/actions/workflows/build.yml)
+
 This is a personal project that I am working on. I want to create a financial overview for you personal finances. As an MVP it should have the following functions:
 - Show an overview of all the transactions
 - Every transactions consists of a date, a description of the transaction, and the amount of the transaction
