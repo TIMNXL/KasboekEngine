@@ -9,14 +9,14 @@
 
         public string Name
         {
-            get { return _name; }
-            set { _name = value; }
+            get => _name;
+            set => _name = value;
         }
 
         public List<Transaction> Transactions
         {
-            get { return transactions; }
-            set { transactions = value; }
+            get => transactions;
+            set => transactions = value;
         }
 
         public decimal InitialBalance => _initialBalance;
@@ -44,30 +44,20 @@
 
         public decimal SumAllIncomes()
         {
-            decimal sumIncome = 0;
-            foreach (var transaction in Transactions)
-            {
-                if (transaction.TypeOfTransaction == TypeOfTransaction.Income)
-                {
-                    sumIncome += transaction.Amount;
-                }
-            }
-            return sumIncome;
+            return transactions.Where(t => t.TypeOfTransaction == TypeOfTransaction.Income).Sum(t => t.Amount);
         }
 
         public decimal SumAllExpenses()
         {
-            decimal sumExpense = 0;
-            foreach (var transaction in Transactions)
-            {
-                if (transaction.TypeOfTransaction == TypeOfTransaction.Expense)
-                {
-                    sumExpense += transaction.Amount;
-                }
-            }
-            return sumExpense;
+            return transactions.Where(t => t.TypeOfTransaction == TypeOfTransaction.Expense).Sum(t => t.Amount);
         }
 
         public decimal SumNewBalance() => _initialBalance + SumAllIncomes() - SumAllExpenses();
+
+        public void RemoveTransaction(Transaction transaction)
+        {
+            var transactionToRemove = transaction;
+            transactions.Where(t => t.) // zoek transaction op in List<> en verwijder hem uit de list dmv Linq.
+        }
     }
 }
