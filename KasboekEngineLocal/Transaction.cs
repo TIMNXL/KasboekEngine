@@ -1,6 +1,6 @@
 ﻿namespace KasboekEngineBackend
 {
-    public class Transaction
+    public class Transaction : ITransaction
     {
         public TypeOfTransaction TypeOfTransaction;
         public DateOnly Date { get; }
@@ -16,7 +16,7 @@
             CheckAmount(amount);
         }
 
-        private decimal CheckAmount(decimal amount)
+        public decimal CheckAmount(decimal amount)
         {
             while (amount <= 0)
             {
